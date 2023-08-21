@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<body>
+
+    <header>
+      <canvas id = "canvasForDrawing" width="200" height="200" style="border:2px solid green"></canvas>    
+    </header>
+
+<main>
+
+    <br>
+    <section>
+      To train a letter, first input a letter in the Letter to train for and then<br>
+      draw on the canvas, once you're done drawing, press the Train pattern button, for each letter to be guessable <br>
+      you have to draw it 3 times. While training a letter you shoudln't change the input in the Letter input textbox. 
+    </section>
+    <br>
+    <label for="labelForLetter1">Letter to train for:</label>
+    <input type="text" id="letterTrain" name="LetterTrain1"><br><br>
+    <button id="trainBt" > Train pattern </button>
+    <br> <br> <br> <br> 
+
+
+    <section>
+      To guess a letter, draw on the canvas, once you're finshed drawing, press the guess button<br>
+      The result of the Guess will be displayed in the Console.
+    </section>
+    <br>
+    <button id="guessBt" > Guess Letter </button>
+    <br> <br> <br>
+
+    <section>
+      If a guess was wrong, you could correct the weight of the letter so that future guesses are more accurate.<br>
+      So after a guess, if it's wrong, input the letter that was supposed to be guessed, (Ex. if you drew 2 input 2) in <br>
+      the text box below, and then press the correct output button. This will keep correcting the letter weight until it's correct.<br>
+      You can see how many times the letter weight had to be modified for your last guess to become correct in the console <br>  
+    </section>
+    <br>
+    <label for="labelForLetterWrong">Enter supposed Letter:</label>
+    <input type="text" id="letterWrong" name="LetterWrong1"><br><br>
+    <button id="wguessBt" > Correct output! </button>
+    <br> <br> <br>
+
+
+</main>
+
+
+<script  src = "NnFinal.js"> </script>  
+</body>
+
+
+
+</html>
